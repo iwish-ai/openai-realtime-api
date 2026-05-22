@@ -63,7 +63,7 @@ async function main() {
 main();
 
 client.on('conversation.item.completed', ({ item }) => {
-  console.log('Conversation item completed:', item);
+  // console.log('Conversation item completed:', item);
 
   if (item.type === 'message' && item.role === 'assistant' && item.formatted && item.formatted.audio) {
     console.log('Playing audio response...');
